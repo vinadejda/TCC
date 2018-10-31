@@ -7,12 +7,39 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Register</ion-title>
+    <ion-title>GreenTech - Cadastre-se</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <form class="form">
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Nome Completo</ion-label>
+        <ion-input type="text" #nome></ion-input>
+      </ion-item>
 
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="email" #email></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Senha</ion-label>
+        <ion-input type="password" #senha></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <!-- <button type="submit" ion-button block (click)="cadastrarUsuario()">
+      Adicionar Usuário
+    </button> -->
+  </form>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Fatec de Praia Grande &copy; 2018 - Equipe GreenTech</ion-title>
+  </ion-toolbar>
+</ion-footer>
